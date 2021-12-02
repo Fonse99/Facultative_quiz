@@ -4,6 +4,8 @@
 
 ### React Application
 
+Inside quiz application we go to move to "todo-app" folder, and run follow:
+
 * Run "npm i" to download all applicacation dependencies 
 
 * Run "npm run build" putting before the value for environment variable like this: **REACT_APP_API_URL=http://localhost:9000/api/todos**
@@ -27,7 +29,7 @@
 
 * next we go to run the command "docker exec -it <container-Id/Container-name> /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P <your_password>"
 
-    A bash terminal will open and we must create the database with the name writted on docker compose manifes, in this case is "todosDB", and to perform this we'll use the script "DATABASE_CREATIOS.sql attached in this repository. 
+    A bash terminal will open and we must create the database with the name writted on docker compose manifest, in this case is "todosDB", exec: `CREATE DATABASE todosDB` and `GO` and at least `USE todosDB` and `GO` after we'll use the script "DATABASE_CREATION.sql attached in this repository to create the table "Todos". 
 
 Now we should look our application running on port 3000 in [localhost](http://localhost:3000). 
 
